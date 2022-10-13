@@ -12,7 +12,22 @@ services:
       - 5432:5432
     volumes:
       - data:/var/lib/postgresql
-  server:
-    image:server_react
+  server_react:
+    build : ./server/
+    ports:
+      - 3000:3000
+  auth:
+    build : ./auth/
+    ports:
+      - 5000:5000
+  database:
+    build : ./database/
+    ports:
+      - 3000:3000
+    auth_client:
+    build : ./auth_client/
+    ports:
+      - 3000:3000
+  
   myapp:
     image: client_react
