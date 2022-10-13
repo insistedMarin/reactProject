@@ -42,12 +42,5 @@ router.post('/recive',function(req,res){
          res.send(true)
 });
 
-router.get('/login', function(req, res, next) {
-    console.log(req.session)
-    if(req.session.user_name!=undefined)
-    res.send(true);
-    else
-    res.send(false);
-  });
 
 module.exports = router;
