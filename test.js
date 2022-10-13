@@ -7,4 +7,4 @@ const user_list=[{
     var password = 123456;
 
 // console.log(user_list.map().find(res=>{res.username==user_name}).password===password)
-user_list.find((res)=>{return res.username===user_name}).password==password
+console.log(user_list.find((res)=>{return res.username==="123"}))
