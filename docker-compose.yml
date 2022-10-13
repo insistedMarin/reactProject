@@ -15,19 +15,21 @@ services:
   server_react:
     build : ./server/
     ports:
-      - 3000:3000
+      - 9000:9000
   auth:
     build : ./auth/
     ports:
-      - 5000:5000
+      - 8000:8000
   database:
     build : ./database/
     ports:
-      - 3000:3000
-    auth_client:
+      - 4000:4000
+  auth_client:
     build : ./auth_client/
     ports:
-      - 3000:3000
+      - 3000:3001
   
   myapp:
-    image: client_react
+    build : ./client/
+    ports:
+      - 3000:3000
