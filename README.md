@@ -53,7 +53,7 @@ Nous avons voulu utiliser pour la première fois la bibiothèque React, afin de 
 
 # Les prochaines étapes
 
--Lancement du projet avec DOcker, nous avons réussi à mettre en place un DockerFIle pour chaque microservice et un docker-compose pour lancer les applications mais nous avons rencontré plusieurs problème liée à notre machine(notameent un problème de stockage).
+-Lancement du projet avec Docker, nous avons réussi à mettre en place un DockerFile pour chaque microservice et un docker-compose pour lancer les applications mais nous avons rencontré plusieurs problème liée à notre machine(notameent un problème de stockage).
 
 -Reverse proxy, nous avons pu s'exerser sur la mise en place d'un reverse proxy, mais étant sur windows, nous n'avons pas pu mettre en place le reverse proxy
 
