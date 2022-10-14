@@ -32,7 +32,7 @@ cd auth
     npm start 
 
 cd client 
-    nmp install
+    npm install
     npm start
 
 cd server 
